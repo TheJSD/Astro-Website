@@ -1,10 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro'
 ---
 
 <Layout title="TheJSD">
 	<main>
+		<Navbar/>
+
 		<svg
 			class="astro-a"
 			width="495"
@@ -55,6 +58,11 @@ import Card from '../components/Card.astro';
 				href="https://github.com/TheJSD/Pokemon-Center-Project"
 				title="Pokémon Center Project"
 				body="The Brief was to make a webapp for a Vet - styled it after Pokémon. Written in Python, uses Flask, SQLAlchemy and Jinja"
+			/>
+			<Card
+				href="./testpage"
+				title="Testing out Astro stuff here"
+				body='Figuring out how to do stuff with Astro'
 			/>
 		</ul>
 	</main>
