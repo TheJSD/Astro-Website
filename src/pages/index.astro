@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import SelfImage from "../assets/Images/SelfImage.jpg";
+import SelfImage from "../assets/Images/SelfImage.svg";
 import { Image } from 'astro:assets';
 import Navbar from "../components/Navbar.astro";
 
@@ -8,17 +8,17 @@ import Navbar from "../components/Navbar.astro";
 
 <Layout title="TheJSD">
   <main class="text-white">
-    <!-- <Navbar/> -->
+    <Navbar/>
     <div class="flex justify-center">
       <div class="w-800 max-w-[100% - 2rem]">
-        <h1 class="text-6xl flex">Hello World!</h1>
+        <h1 class="text-4xl flex">Hello World!</h1>
         <div class="flex space-x-12">
           <!-- Flex Left -->
           <div class="">
             <Image
               src={SelfImage}
-              alt=":^)"
-              height="400px"
+              alt="Profile Image should be here :^)"
+              height="400"
             />
           </div>
           <!-- Flex Right -->
